@@ -14,13 +14,27 @@ h1 {
   font-size: 36px;
 }
 
-.turn-info {
+.win-info {
+  display: none;
+}
+
+.turn-info, .win-info {
   margin: 0;
   font-size: 24px;
 }
 
-.turn-info span {
+.turn-info span, .win-info span {
   margin-right: 5px;
+}
+
+.reset-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.reset-box a {
+  color: gray;
+  font-size: 18px;
 }
 
 .board {
@@ -41,6 +55,10 @@ h1 {
   text-align: center;
   padding-top: 15px;
   box-sizing: border-box;
+}
+
+.cell.win {
+  background-color: #efefef;
 }
 
 .cell.x, .cell.o {
