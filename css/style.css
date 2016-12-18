@@ -1,0 +1,70 @@
+
+body {
+  font-family: 'Crafty Girls', cursive;
+}
+
+.container {
+  width: 422px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.turn-info {
+  margin: 0;
+  font-size: 24px;
+}
+
+.turn-info span {
+  margin-right: 5px;
+}
+
+.board {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  cursor: pointer;
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  border: 0 dashed gray;
+  font-size: 112px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.cell.x, .cell.o {
+  cursor: default;
+}
+
+.cell:nth-child(5) {
+  border-width: 1px;
+}
+
+.cell:nth-child(2), .cell:nth-child(8) {
+  border-width: 0 1px
+}
+
+.cell:nth-child(4), .cell:nth-child(6) {
+  border-width: 1px 0
+}
+
+.x::after {
+  content: "X";
+  color: red;
+}
+
+.o::after {
+  content: "O";
+  color: blue;
+}
